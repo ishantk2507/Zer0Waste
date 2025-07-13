@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Inventory - ZeroWaste.AI</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-primary': '#059669',
+                        'green-secondary': '#047857',
+                        'green-light': '#d1fae5',
+                        'green-dark': '#064e3b',
+                        'accent-blue': '#0ea5e9',
+                        'accent-purple': '#8b5cf6',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-in-left': 'slideInLeft 0.6s ease-out',
+                        'slide-in-right': 'slideInRight 0.6s ease-out',
+                        'bounce-gentle': 'bounceGentle 2s ease-in-out infinite',
+                        'pulse-ring': 'pulseRing 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite',
+                        'count-up': 'countUp 2s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-40px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(40px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        bounceGentle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        pulseRing: {
+                            '0%': { transform: 'scale(0.33)' },
+                            '80%, 100%': { transform: 'scale(1)', opacity: '0' }
+                        },
+                        countUp: {
+                            '0%': { transform: 'scale(0.5)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .spinner {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid #059669;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .form-card {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .input-enhanced {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .input-enhanced:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(5, 150, 105, 0.15);
+        }
+        
+        .radio-enhanced {
+            transition: all 0.2s ease;
+        }
+        
+        .radio-enhanced:checked {
+            transform: scale(1.1);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
+        }
+        
+        .score-animation {
+            animation: countUp 1.5s ease-out;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Enhanced Navigation -->
+    <nav class="glass-nav sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Title -->
+                <div class="flex items-center animate-slide-in-left">
+                    <h1 class="text-xl font-bold bg-gradient-to-r from-green-primary to-accent-blue bg-clip-text text-transparent">
+                        ZeroWaste.AI
+                    </h1>
+                    <span class="ml-2 text-sm text-gray-600 hidden sm:inline">Smart Inventory</span>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-6 animate-fade-in">
+                    <a href="{{ url_for('dashboard') }}" 
+                       class="text-gray-700 hover:text-green-primary px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-green-primary/10">
+                        Dashboard
+                    </a>
+                    <a href="{{ url_for('inventory') }}" 
+                       class="text-green-primary bg-green-primary/10 px-3 py-2 rounded-lg text-sm font-medium">
+                        Inventory Check
+                    </a>
+                </div>
+                
+                <!-- User Menu -->
+                <div class="flex items-center space-x-4 animate-slide-in-right">
+                    <div class="hidden sm:flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-r from-green-primary to-accent-blue rounded-full flex items-center justify-center">
+                            <span class="text-white text-sm font-semibold">D</span>
+                        </div>
+                        <span class="text-sm text-gray-700">Demo User</span>
+                    </div>
+                    <a href="{{ url_for('login') }}" 
+                       class="text-red-600 hover:text-red-800 text-sm font-medium transition-colors duration-300 hover:bg-red-50 px-3 py-1 rounded-lg">
+                        Log Out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="pt-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Enhanced Page Header -->
+            <div class="text-center mb-12 animate-fade-in">
+                <h1 class="text-4xl font-bold bg-gradient-to-r from-green-primary via-accent-blue to-accent-purple bg-clip-text text-transparent mb-4">
+                    Smart Inventory Analysis
+                </h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Leverage AI-powered insights to optimize freshness and reduce waste
+                </p>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-primary to-accent-blue mx-auto mt-6 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Enhanced Input Form -->
+                <div class="form-card rounded-2xl p-8 animate-slide-in-left">
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-r from-green-primary to-accent-blue rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-900">Product Information</h2>
+                    </div>
+                    
+                    <form id="freshness-form" class="space-y-6">
+                        <!-- Product Selection -->
+                        <div class="space-y-2">
+                            <label for="product" class="block text-sm font-semibold text-gray-700">
+                                Product Type *
+                            </label>
+                            <select id="product" 
+                                    name="product" 
+                                    required 
+                                    class="input-enhanced w-full px-4 py-3 border-2 border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-green-primary focus:border-transparent transition-all duration-300">
+                                <option value="">Select a product</option>
+                                <option value="Tomato">🍅 Tomato</option>
+                                <option value="Milk">🥛 Milk</option>
+                                <option value="Bread">🍞 Bread</option>
+                                <option value="Banana">🍌 Banana</option>
+                                <option value="Paneer">🧀 Paneer</option>
+                                <option value="Spinach">🥬 Spinach</option>
+                                <option value="Apple">🍎 Apple</option>
+                                <option value="Eggs">🥚 Eggs</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Stock Date -->
+                        <div class="space-y-2">
+                            <label for="stock_date" class="block text-sm font-semibold text-gray-700">
+                                Stock Date *
+                            </label>
+                            <input type="date" 
+                                   id="stock_date" 
+                                   name="stock_date" 
+                                   required 
+                                   class="input-enhanced w-full px-4 py-3 border-2 border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-green-primary focus:border-transparent">
+                        </div>
+                        
+                        <!-- Storage Type -->
+                        <div class="space-y-3">
+                            <label class="block text-sm font-semibold text-gray-700">
+                                Storage Type *
+                            </label>
+                            <div class="grid grid-cols-1 gap-3">
+                                <label class="flex items-center p-4 border-2 border-gray-200 rounded-xl hover:border-green-primary hover:bg-green-50 transition-all duration-300 cursor-pointer">
+                                    <input type="radio" 
+                                           name="storage_type" 
+                                           value="Ambient" 
+                                           checked
+                                           class="radio-enhanced h-5 w-5 text-green-primary focus:ring-green-primary border-gray-300">
+                                    <div class="ml-3">
+                                        <span class="text-sm font-medium text-gray-900">🌡️ Ambient Storage</span>
+                                        <p class="text-xs text-gray-500">Room temperature storage</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-center p-4 border-2 border-gray-200 rounded-xl hover:border-green-primary hover:bg-green-50 transition-all duration-300 cursor-pointer">
+                                    <input type="radio" 
+                                           name="storage_type" 
+                                           value="Refrigerated"
+                                           class="radio-enhanced h-5 w-5 text-green-primary focus:ring-green-primary border-gray-300">
+                                    <div class="ml-3">
+                                        <span class="text-sm font-medium text-gray-900">❄️ Refrigerated</span>
+                                        <p class="text-xs text-gray-500">Cold storage (2-8°C)</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-center p-4 border-2 border-gray-200 rounded-xl hover:border-green-primary hover:bg-green-50 transition-all duration-300 cursor-pointer">
+                                    <input type="radio" 
+                                           name="storage_type" 
+                                           value="Frozen"
+                                           class="radio-enhanced h-5 w-5 text-green-primary focus:ring-green-primary border-gray-300">
+                                    <div class="ml-3">
+                                        <span class="text-sm font-medium text-gray-900">🧊 Frozen</span>
+                                        <p class="text-xs text-gray-500">Frozen storage (-18°C)</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Environmental Conditions -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-2">
+                                <label for="temperature" class="block text-sm font-semibold text-gray-700">
+                                    Temperature (°C) *
+                                </label>
+                                <input type="number" 
+                                       id="temperature" 
+                                       name="temperature" 
+                                       step="0.1" 
+                                       required 
+                                       class="input-enhanced w-full px-4 py-3 border-2 border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-green-primary focus:border-transparent"
+                                       placeholder="22.5">
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label for="humidity" class="block text-sm font-semibold text-gray-700">
+                                    Humidity (%) *
+                                </label>
+                                <input type="number" 
+                                       id="humidity" 
+                                       name="humidity" 
+                                       min="0" 
+                                       max="100" 
+                                       required 
+                                       class="input-enhanced w-full px-4 py-3 border-2 border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-green-primary focus:border-transparent"
+                                       placeholder="65">
+                            </div>
+                        </div>
+                        
+                        <!-- Location -->
+                        <div class="space-y-2">
+                            <label for="location" class="block text-sm font-semibold text-gray-700">
+                                Location *
+                            </label>
+                            <select id="location" 
+                                    name="location" 
+                                    required 
+                                    class="input-enhanced w-full px-4 py-3 border-2 border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-green-primary focus:border-transparent">
+                                <option value="">Select location</option>
+                                <option value="Delhi">🏙️ Delhi</option>
+                                <option value="Mumbai">🌊 Mumbai</option>
+                                <option value="Bangalore">🌳 Bangalore</option>
+                                <option value="Kolkata">🏛️ Kolkata</option>
+                                <option value="Chennai">🏖️ Chennai</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" 
+                                id="check-freshness-btn"
+                                class="w-full flex justify-center items-center py-4 px-6 bg-gradient-to-r from-green-primary to-accent-blue text-white font-semibold rounded-xl hover:from-green-secondary hover:to-accent-blue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-primary transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
+                            <span id="btn-text">🔍 Analyze Freshness</span>
+                            <div id="btn-spinner" class="spinner ml-3 hidden"></div>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Enhanced Results Display -->
+                <div class="form-card rounded-2xl p-8 animate-slide-in-right">
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-r from-accent-blue to-accent-purple rounded-xl flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-900">AI Analysis Results</h2>
+                    </div>
+                    
+                    <!-- Loading State -->
+                    <div id="loading-state" class="hidden text-center py-16">
+                        <div class="relative">
+                            <div class="spinner mx-auto mb-6"></div>
+                            <div class="absolute inset-0 animate-pulse-ring">
+                                <div class="w-16 h-16 border-4 border-green-primary rounded-full mx-auto opacity-20"></div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-lg">Analyzing freshness with AI...</p>
+                        <p class="text-gray-500 text-sm mt-2">Processing environmental factors</p>
+                    </div>
+                    
+                    <!-- Empty State -->
+                    <div id="empty-state" class="text-center py-16">
+                        <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-gray-100 to-gray-200 rounded-full flex items-center justify-center animate-bounce-gentle">
+                            <svg class="w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Ready for Analysis</h3>
+                        <p class="text-gray-600">Fill out the form to get AI-powered freshness insights</p>
+                    </div>
+                    
+                    <!-- Results -->
+                    <div id="results-state" class="hidden">
+                        <!-- Freshness Score -->
+                        <div class="text-center mb-8">
+                            <div class="relative inline-block">
+                                <div class="w-32 h-32 rounded-full flex items-center justify-center mb-4 score-animation" id="score-circle">
+                                    <span class="text-3xl font-bold text-white" id="freshness-score">--</span>
+                                </div>
+                                <div class="absolute inset-0 rounded-full animate-pulse-ring opacity-30" id="score-ring"></div>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2" id="product-name">Product</h3>
+                            <p class="text-gray-600 text-lg" id="days-old">-- days on shelf</p>
+                        </div>
+                        
+                        <!-- Recommendation Card -->
+                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 mb-6 border border-blue-100">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-gradient-to-r from-accent-blue to-accent-purple rounded-lg flex items-center justify-center mr-3 mt-1">
+                                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-2">AI Recommendation</h4>
+                                    <p class="text-gray-700" id="recommendation">--</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Button -->
+                        <button id="redistribute-btn" 
+                                class="w-full py-3 px-6 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl hover:from-orange-600 hover:to-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition-all duration-300 transform hover:scale-105 hidden">
+                            🚚 Schedule Redistribution
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('freshness-form');
+            const submitBtn = document.getElementById('check-freshness-btn');
+            const btnText = document.getElementById('btn-text');
+            const btnSpinner = document.getElementById('btn-spinner');
+            
+            const loadingState = document.getElementById('loading-state');
+            const emptyState = document.getElementById('empty-state');
+            const resultsState = document.getElementById('results-state');
+            
+            // Set default date to today
+            document.getElementById('stock_date').valueAsDate = new Date();
+            
+            // Add input animations
+            const inputs = document.querySelectorAll('.input-enhanced');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.classList.add('transform', 'scale-105');
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.classList.remove('transform', 'scale-105');
+                });
+            });
+            
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Enhanced loading state
+                submitBtn.disabled = true;
+                btnText.textContent = '🔄 Analyzing...';
+                btnSpinner.classList.remove('hidden');
+                
+                // Smooth transitions
+                emptyState.style.transform = 'translateY(-20px)';
+                emptyState.style.opacity = '0';
+                setTimeout(() => {
+                    emptyState.classList.add('hidden');
+                    resultsState.classList.add('hidden');
+                    loadingState.classList.remove('hidden');
+                }, 300);
+                
+                // Simulate API call with realistic delay
+                setTimeout(() => {
+                    const formData = new FormData(form);
+                    const mockData = generateMockPrediction(formData);
+                    displayResults(mockData);
+                    
+                    // Reset button state
+                    submitBtn.disabled = false;
+                    btnText.textContent = '🔍 Analyze Freshness';
+                    btnSpinner.classList.add('hidden');
+                    loadingState.classList.add('hidden');
+                }, 3000);
+            });
+            
+            function generateMockPrediction(formData) {
+                const product = formData.get('product');
+                const stockDate = new Date(formData.get('stock_date'));
+                const temperature = parseFloat(formData.get('temperature'));
+                const humidity = parseFloat(formData.get('humidity'));
+                const storageType = formData.get('storage_type');
+                
+                const daysOld = Math.floor((new Date() - stockDate) / (1000 * 60 * 60 * 24));
+                
+                // Enhanced mock freshness calculation
+                let freshness = 100 - (daysOld * 8);
+                
+                if (storageType === 'Refrigerated') freshness += 15;
+                if (storageType === 'Frozen') freshness += 25;
+                if (temperature > 25) freshness -= 20;
+                if (humidity > 80) freshness -= 15;
+                
+                freshness = Math.max(5, Math.min(100, freshness + Math.random() * 20 - 10));
+                
+                let recommendation;
+                if (freshness >= 80) {
+                    recommendation = 'Excellent condition! Continue current storage practices.';
+                } else if (freshness >= 60) {
+                    recommendation = 'Good condition. Monitor closely for optimal freshness.';
+                } else if (freshness >= 40) {
+                    recommendation = 'Fair condition. Consider redistribution within 24-48 hours.';
+                } else {
+                    recommendation = 'Poor condition. Immediate redistribution recommended to prevent waste.';
+                }
+                
+                return {
+                    freshness_score: Math.round(freshness * 10) / 10,
+                    product: product,
+                    days_old: daysOld,
+                    recommendation: recommendation
+                };
+            }
+            
+            function displayResults(data) {
+                const scoreCircle = document.getElementById('score-circle');
+                const scoreRing = document.getElementById('score-ring');
+                const freshnessScore = document.getElementById('freshness-score');
+                const productName = document.getElementById('product-name');
+                const daysOld = document.getElementById('days-old');
+                const recommendation = document.getElementById('recommendation');
+                const redistributeBtn = document.getElementById('redistribute-btn');
+                
+                // Animate score reveal
+                let currentScore = 0;
+                const targetScore = data.freshness_score;
+                const increment = targetScore / 50;
+                
+                const scoreAnimation = setInterval(() => {
+                    currentScore += increment;
+                    if (currentScore >= targetScore) {
+                        currentScore = targetScore;
+                        clearInterval(scoreAnimation);
+                    }
+                    freshnessScore.textContent = Math.round(currentScore) + '%';
+                }, 40);
+                
+                // Update content with animation
+                setTimeout(() => {
+                    productName.textContent = data.product;
+                    daysOld.textContent = data.days_old + ' days on shelf';
+                    recommendation.textContent = data.recommendation;
+                }, 500);
+                
+                // Update score circle color with smooth transition
+                const score = data.freshness_score;
+                let circleClass, ringClass;
+                
+                if (score >= 70) {
+                    circleClass = 'w-32 h-32 rounded-full flex items-center justify-center mb-4 score-animation bg-gradient-to-r from-green-400 to-green-600';
+                    ringClass = 'border-green-400';
+                } else if (score >= 50) {
+                    circleClass = 'w-32 h-32 rounded-full flex items-center justify-center mb-4 score-animation bg-gradient-to-r from-yellow-400 to-orange-500';
+                    ringClass = 'border-yellow-400';
+                } else {
+                    circleClass = 'w-32 h-32 rounded-full flex items-center justify-center mb-4 score-animation bg-gradient-to-r from-red-400 to-red-600';
+                    ringClass = 'border-red-400';
+                }
+                
+                scoreCircle.className = circleClass;
+                scoreRing.className = `absolute inset-0 rounded-full animate-pulse-ring opacity-30 border-4 ${ringClass}`;
+                
+                // Show redistribute button for low scores with animation
+                if (score < 60) {
+                    setTimeout(() => {
+                        redistributeBtn.classList.remove('hidden');
+                        redistributeBtn.style.transform = 'translateY(20px)';
+                        redistributeBtn.style.opacity = '0';
+                        setTimeout(() => {
+                            redistributeBtn.style.transform = 'translateY(0)';
+                            redistributeBtn.style.opacity = '1';
+                        }, 100);
+                    }, 1000);
+                } else {
+                    redistributeBtn.classList.add('hidden');
+                }
+                
+                // Show results with smooth animation
+                resultsState.style.transform = 'translateY(20px)';
+                resultsState.style.opacity = '0';
+                resultsState.classList.remove('hidden');
+                
+                setTimeout(() => {
+                    resultsState.style.transform = 'translateY(0)';
+                    resultsState.style.opacity = '1';
+                }, 100);
+            }
+        });
+    </script>
+</body>
+</html>

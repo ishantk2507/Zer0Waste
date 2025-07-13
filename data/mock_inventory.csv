@@ -1,0 +1,427 @@
+batch_id,product,category,stock_date,storage_type,store_location,temperature,humidity,expiry_date,spoilage
+batch_2025-07-13,Apple,Fruit,2025-07-13,Refrigerated,Delhi,2.2,100,2025-08-06,0
+batch_2025-07-13,Apple,Fruit,2025-07-13,Refrigerated,Delhi,3.3,95.1,2025-08-03,0
+batch_2025-07-13,Apple,Fruit,2025-07-10,Refrigerated,Mumbai,1.4,82.6,2025-08-08,0
+batch_2025-07-13,Apple,Fruit,2025-07-07,Refrigerated,Mumbai,4.1,89.1,2025-08-01,1
+batch_2025-07-13,Apple,Fruit,2025-07-09,Refrigerated,Kolkata,5.0,61.3,2025-07-30,0
+batch_2025-07-13,Apple,Fruit,2025-07-12,Refrigerated,Chennai,3.7,89.9,2025-08-02,0
+batch_2025-07-13,Apple,Fruit,2025-07-10,Refrigerated,Bangalore,2.4,92.7,2025-08-09,0
+batch_2025-07-13,Apple,Fruit,2025-07-09,Refrigerated,Delhi,5.8,100,2025-08-08,0
+batch_2025-07-13,Apple,Fruit,2025-07-12,Refrigerated,Chennai,0.2,100,2025-08-11,0
+batch_2025-07-13,Apple,Fruit,2025-07-12,Refrigerated,Delhi,4.2,75.1,2025-08-10,0
+batch_2025-07-13,Apple,Fruit,2025-07-12,Refrigerated,Bangalore,1.7,78.2,2025-08-04,0
+batch_2025-07-13,Apple,Fruit,2025-07-09,Refrigerated,Mumbai,2.7,100,2025-08-05,0
+batch_2025-07-13,Apple,Fruit,2025-07-10,Refrigerated,Delhi,-1.6,98.5,2025-08-05,0
+batch_2025-07-13,Apple,Fruit,2025-07-08,Refrigerated,Delhi,1.7,88.9,2025-08-05,1
+batch_2025-07-13,Apple,Fruit,2025-07-09,Refrigerated,Bangalore,1.2,69.7,2025-07-31,0
+batch_2025-07-13,Apple,Fruit,2025-07-07,Refrigerated,Bangalore,-0.7,87.3,2025-07-29,1
+batch_2025-07-13,Apple,Fruit,2025-07-07,Refrigerated,Bangalore,2.2,84.2,2025-07-31,0
+batch_2025-07-13,Apple,Fruit,2025-07-07,Refrigerated,Chennai,4.2,78.1,2025-07-29,0
+batch_2025-07-13,Apple,Fruit,2025-07-09,Refrigerated,Mumbai,1.3,76.9,2025-08-01,0
+batch_2025-07-13,Apple,Fruit,2025-07-12,Refrigerated,Mumbai,0.4,94.3,2025-08-02,0
+batch_2025-07-13,Apple,Fruit,2025-07-13,Refrigerated,Mumbai,2.5,100,2025-08-02,0
+batch_2025-07-13,Apple,Fruit,2025-07-09,Refrigerated,Chennai,2.4,85.8,2025-08-05,0
+batch_2025-07-13,Apple,Fruit,2025-07-10,Refrigerated,Kolkata,-1.7,100,2025-07-30,0
+batch_2025-07-13,Apple,Fruit,2025-07-12,Refrigerated,Mumbai,0.7,100,2025-08-04,1
+batch_2025-07-13,Apple,Fruit,2025-07-13,Refrigerated,Chennai,0.2,92.3,2025-08-02,0
+batch_2025-07-13,Banana,Fruit,2025-07-10,Ambient,Kolkata,18.2,81.7,2025-07-16,1
+batch_2025-07-13,Banana,Fruit,2025-07-11,Ambient,Kolkata,11.0,61.1,2025-07-17,1
+batch_2025-07-13,Banana,Fruit,2025-07-13,Ambient,Mumbai,14.8,68.5,2025-07-20,0
+batch_2025-07-13,Banana,Fruit,2025-07-12,Ambient,Chennai,16.8,81.8,2025-07-15,0
+batch_2025-07-13,Banana,Fruit,2025-07-09,Ambient,Delhi,13.8,86.0,2025-07-13,1
+batch_2025-07-13,Banana,Fruit,2025-07-12,Ambient,Bangalore,17.2,60.6,2025-07-17,0
+batch_2025-07-13,Banana,Fruit,2025-07-13,Ambient,Delhi,9.0,83.2,2025-07-19,1
+batch_2025-07-13,Banana,Fruit,2025-07-13,Ambient,Bangalore,15.2,61.8,2025-07-17,0
+batch_2025-07-13,Banana,Fruit,2025-07-13,Ambient,Chennai,15.8,71.0,2025-07-20,0
+batch_2025-07-13,Banana,Fruit,2025-07-12,Ambient,Chennai,16.0,66.6,2025-07-17,0
+batch_2025-07-13,Banana,Fruit,2025-07-07,Ambient,Bangalore,18.6,68.0,2025-07-10,0
+batch_2025-07-13,Banana,Fruit,2025-07-12,Ambient,Bangalore,12.7,69.6,2025-07-18,0
+batch_2025-07-13,Banana,Fruit,2025-07-13,Ambient,Chennai,13.3,78.0,2025-07-18,0
+batch_2025-07-13,Banana,Fruit,2025-07-11,Ambient,Delhi,10.2,65.8,2025-07-15,0
+batch_2025-07-13,Banana,Fruit,2025-07-12,Ambient,Mumbai,21.4,67.7,2025-07-16,1
+batch_2025-07-13,Banana,Fruit,2025-07-07,Ambient,Kolkata,17.2,98.3,2025-07-11,1
+batch_2025-07-13,Banana,Fruit,2025-07-11,Ambient,Kolkata,16.1,80.8,2025-07-16,0
+batch_2025-07-13,Banana,Fruit,2025-07-07,Ambient,Delhi,12.3,48.9,2025-07-12,1
+batch_2025-07-13,Banana,Fruit,2025-07-12,Ambient,Bangalore,17.0,76.5,2025-07-19,0
+batch_2025-07-13,Banana,Fruit,2025-07-09,Ambient,Chennai,13.0,77.6,2025-07-12,0
+batch_2025-07-13,Banana,Fruit,2025-07-08,Ambient,Chennai,15.0,58.1,2025-07-12,0
+batch_2025-07-13,Banana,Fruit,2025-07-09,Ambient,Bangalore,13.3,57.6,2025-07-14,0
+batch_2025-07-13,Banana,Fruit,2025-07-08,Ambient,Kolkata,11.8,67.1,2025-07-12,0
+batch_2025-07-13,Banana,Fruit,2025-07-09,Ambient,Chennai,12.0,77.8,2025-07-14,0
+batch_2025-07-13,Banana,Fruit,2025-07-08,Ambient,Mumbai,16.5,63.1,2025-07-11,1
+batch_2025-07-13,Banana,Fruit,2025-07-12,Ambient,Bangalore,16.3,73.3,2025-07-16,0
+batch_2025-07-13,Banana,Fruit,2025-07-12,Ambient,Chennai,12.8,66.3,2025-07-18,0
+batch_2025-07-13,Milk,Dairy,2025-07-07,Refrigerated,Delhi,4.6,77.2,2025-07-20,0
+batch_2025-07-13,Milk,Dairy,2025-07-10,Refrigerated,Delhi,3.8,100,2025-07-21,0
+batch_2025-07-13,Milk,Dairy,2025-07-07,Refrigerated,Chennai,4.2,93.1,2025-07-22,0
+batch_2025-07-13,Milk,Dairy,2025-07-11,Refrigerated,Kolkata,3.6,82.0,2025-07-22,0
+batch_2025-07-13,Milk,Dairy,2025-07-12,Refrigerated,Bangalore,0.9,95.1,2025-07-24,0
+batch_2025-07-13,Milk,Dairy,2025-07-13,Refrigerated,Mumbai,-0.0,88.5,2025-07-26,0
+batch_2025-07-13,Milk,Dairy,2025-07-08,Refrigerated,Chennai,4.4,89.9,2025-07-18,0
+batch_2025-07-13,Milk,Dairy,2025-07-09,Refrigerated,Kolkata,1.6,94.5,2025-07-24,0
+batch_2025-07-13,Milk,Dairy,2025-07-11,Refrigerated,Kolkata,1.0,100,2025-07-26,0
+batch_2025-07-13,Milk,Dairy,2025-07-10,Refrigerated,Delhi,1.6,83.0,2025-07-24,1
+batch_2025-07-13,Milk,Dairy,2025-07-11,Refrigerated,Kolkata,-0.3,91.9,2025-07-22,0
+batch_2025-07-13,Milk,Dairy,2025-07-10,Refrigerated,Delhi,2.4,94.8,2025-07-20,0
+batch_2025-07-13,Milk,Dairy,2025-07-07,Refrigerated,Delhi,4.9,96.4,2025-07-17,0
+batch_2025-07-13,Milk,Dairy,2025-07-12,Refrigerated,Chennai,1.0,100,2025-07-25,0
+batch_2025-07-13,Milk,Dairy,2025-07-11,Refrigerated,Mumbai,-2.1,67.9,2025-07-21,0
+batch_2025-07-13,Milk,Dairy,2025-07-13,Refrigerated,Mumbai,1.1,100,2025-07-27,0
+batch_2025-07-13,Milk,Dairy,2025-07-07,Refrigerated,Delhi,3.0,84.7,2025-07-21,0
+batch_2025-07-13,Milk,Dairy,2025-07-07,Refrigerated,Kolkata,10.3,64.0,2025-07-20,1
+batch_2025-07-13,Milk,Dairy,2025-07-08,Refrigerated,Chennai,-1.3,81.6,2025-07-20,0
+batch_2025-07-13,Milk,Dairy,2025-07-07,Refrigerated,Bangalore,2.7,88.1,2025-07-18,0
+batch_2025-07-13,Milk,Dairy,2025-07-11,Refrigerated,Kolkata,-0.3,78.9,2025-07-21,0
+batch_2025-07-13,Milk,Dairy,2025-07-08,Refrigerated,Chennai,-0.2,99.1,2025-07-20,0
+batch_2025-07-13,Milk,Dairy,2025-07-08,Refrigerated,Mumbai,0.7,87.0,2025-07-21,0
+batch_2025-07-13,Milk,Dairy,2025-07-08,Refrigerated,Bangalore,1.2,100,2025-07-22,0
+batch_2025-07-13,Milk,Dairy,2025-07-11,Refrigerated,Kolkata,2.6,96.6,2025-07-23,0
+batch_2025-07-13,Milk,Dairy,2025-07-12,Refrigerated,Mumbai,2.2,72.1,2025-07-23,0
+batch_2025-07-13,Milk,Dairy,2025-07-11,Refrigerated,Mumbai,1.3,84.5,2025-07-22,0
+batch_2025-07-13,Milk,Dairy,2025-07-08,Refrigerated,Bangalore,0.7,91.5,2025-07-19,0
+batch_2025-07-13,Bread,Bakery,2025-07-12,Ambient,Bangalore,25.1,62.9,2025-07-15,0
+batch_2025-07-13,Bread,Bakery,2025-07-12,Ambient,Delhi,20.5,69.1,2025-07-15,0
+batch_2025-07-13,Bread,Bakery,2025-07-07,Ambient,Chennai,24.3,51.3,2025-07-12,0
+batch_2025-07-13,Bread,Bakery,2025-07-09,Ambient,Bangalore,29.2,73.5,2025-07-14,1
+batch_2025-07-13,Bread,Bakery,2025-07-12,Ambient,Delhi,22.9,71.1,2025-07-15,0
+batch_2025-07-13,Bread,Bakery,2025-07-11,Ambient,Mumbai,23.3,67.0,2025-07-16,0
+batch_2025-07-13,Bread,Bakery,2025-07-08,Ambient,Chennai,17.9,38.7,2025-07-11,1
+batch_2025-07-13,Bread,Bakery,2025-07-07,Ambient,Mumbai,13.8,63.7,2025-07-11,1
+batch_2025-07-13,Bread,Bakery,2025-07-11,Ambient,Kolkata,15.6,33.9,2025-07-16,0
+batch_2025-07-13,Bread,Bakery,2025-07-13,Ambient,Delhi,30.6,33.9,2025-07-16,0
+batch_2025-07-13,Bread,Bakery,2025-07-09,Ambient,Bangalore,19.8,53.9,2025-07-12,0
+batch_2025-07-13,Bread,Bakery,2025-07-08,Ambient,Kolkata,25.7,53.2,2025-07-12,1
+batch_2025-07-13,Bread,Bakery,2025-07-08,Ambient,Kolkata,22.5,58.4,2025-07-12,0
+batch_2025-07-13,Bread,Bakery,2025-07-13,Ambient,Bangalore,20.6,70.2,2025-07-17,0
+batch_2025-07-13,Bread,Bakery,2025-07-11,Ambient,Chennai,18.2,56.4,2025-07-16,0
+batch_2025-07-13,Bread,Bakery,2025-07-08,Ambient,Kolkata,36.0,50.4,2025-07-12,1
+batch_2025-07-13,Bread,Bakery,2025-07-10,Ambient,Chennai,26.3,90.8,2025-07-13,1
+batch_2025-07-13,Bread,Bakery,2025-07-09,Ambient,Bangalore,24.1,63.1,2025-07-14,0
+batch_2025-07-13,Bread,Bakery,2025-07-09,Ambient,Chennai,22.6,67.1,2025-07-14,0
+batch_2025-07-13,Bread,Bakery,2025-07-11,Ambient,Chennai,22.1,23.0,2025-07-14,1
+batch_2025-07-13,Bread,Bakery,2025-07-10,Ambient,Chennai,20.6,50.4,2025-07-14,0
+batch_2025-07-13,Bread,Bakery,2025-07-09,Ambient,Mumbai,25.4,75.1,2025-07-13,0
+batch_2025-07-13,Bread,Bakery,2025-07-08,Ambient,Kolkata,26.2,76.4,2025-07-13,0
+batch_2025-07-13,Bread,Bakery,2025-07-13,Ambient,Kolkata,21.5,87.6,2025-07-18,1
+batch_2025-07-13,Paneer,Dairy,2025-07-11,Refrigerated,Bangalore,1.4,76.5,2025-07-21,0
+batch_2025-07-13,Paneer,Dairy,2025-07-07,Refrigerated,Kolkata,1.7,74.8,2025-07-14,1
+batch_2025-07-13,Paneer,Dairy,2025-07-07,Refrigerated,Delhi,-2.4,86.0,2025-07-14,0
+batch_2025-07-13,Paneer,Dairy,2025-07-10,Refrigerated,Bangalore,3.9,78.9,2025-07-18,0
+batch_2025-07-13,Paneer,Dairy,2025-07-09,Refrigerated,Kolkata,-0.7,99.3,2025-07-17,0
+batch_2025-07-13,Paneer,Dairy,2025-07-11,Refrigerated,Kolkata,11.5,94.9,2025-07-19,1
+batch_2025-07-13,Paneer,Dairy,2025-07-07,Refrigerated,Kolkata,4.9,76.4,2025-07-16,0
+batch_2025-07-13,Paneer,Dairy,2025-07-13,Refrigerated,Bangalore,3.6,69.3,2025-07-23,0
+batch_2025-07-13,Paneer,Dairy,2025-07-07,Refrigerated,Kolkata,3.6,82.0,2025-07-16,0
+batch_2025-07-13,Paneer,Dairy,2025-07-08,Refrigerated,Mumbai,5.8,90.3,2025-07-15,0
+batch_2025-07-13,Paneer,Dairy,2025-07-11,Refrigerated,Delhi,3.2,100,2025-07-20,0
+batch_2025-07-13,Paneer,Dairy,2025-07-07,Refrigerated,Bangalore,4.0,77.6,2025-07-15,0
+batch_2025-07-13,Paneer,Dairy,2025-07-10,Refrigerated,Delhi,12.1,83.5,2025-07-17,0
+batch_2025-07-13,Paneer,Dairy,2025-07-11,Refrigerated,Chennai,3.5,72.4,2025-07-18,0
+batch_2025-07-13,Paneer,Dairy,2025-07-10,Refrigerated,Chennai,5.1,100,2025-07-19,0
+batch_2025-07-13,Paneer,Dairy,2025-07-08,Refrigerated,Mumbai,1.6,70.4,2025-07-15,1
+batch_2025-07-13,Paneer,Dairy,2025-07-11,Refrigerated,Delhi,6.0,73.6,2025-07-21,0
+batch_2025-07-13,Paneer,Dairy,2025-07-10,Refrigerated,Chennai,5.5,80.9,2025-07-18,0
+batch_2025-07-13,Paneer,Dairy,2025-07-12,Refrigerated,Bangalore,2.5,92.1,2025-07-22,0
+batch_2025-07-13,Paneer,Dairy,2025-07-13,Refrigerated,Bangalore,3.6,88.3,2025-07-23,0
+batch_2025-07-13,Paneer,Dairy,2025-07-13,Refrigerated,Chennai,3.6,100,2025-07-20,0
+batch_2025-07-13,Paneer,Dairy,2025-07-09,Refrigerated,Mumbai,3.9,71.9,2025-07-17,0
+batch_2025-07-13,Paneer,Dairy,2025-07-12,Refrigerated,Mumbai,3.7,84.2,2025-07-21,0
+batch_2025-07-13,Paneer,Dairy,2025-07-11,Refrigerated,Chennai,4.0,74.1,2025-07-18,0
+batch_2025-07-13,Paneer,Dairy,2025-07-09,Refrigerated,Bangalore,2.5,70.5,2025-07-16,0
+batch_2025-07-13,Paneer,Dairy,2025-07-10,Refrigerated,Bangalore,5.4,85.7,2025-07-17,0
+batch_2025-07-13,Paneer,Dairy,2025-07-13,Refrigerated,Delhi,2.3,94.4,2025-07-22,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-09,Refrigerated,Chennai,-0.1,100,2025-07-14,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-08,Refrigerated,Chennai,-1.7,81.1,2025-07-12,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-10,Refrigerated,Bangalore,2.0,100,2025-07-15,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-10,Refrigerated,Delhi,2.6,94.8,2025-07-14,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-10,Refrigerated,Delhi,8.0,77.6,2025-07-15,1
+batch_2025-07-13,Spinach,Vegetable,2025-07-11,Refrigerated,Bangalore,2.0,82.8,2025-07-15,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-13,Refrigerated,Bangalore,0.4,75.8,2025-07-18,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-13,Refrigerated,Chennai,6.5,94.9,2025-07-19,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-11,Refrigerated,Bangalore,3.5,86.1,2025-07-15,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-08,Refrigerated,Delhi,4.3,91.7,2025-07-14,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-09,Refrigerated,Chennai,3.9,87.2,2025-07-13,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-10,Refrigerated,Kolkata,0.6,85.8,2025-07-16,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-10,Refrigerated,Chennai,2.6,85.9,2025-07-16,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-07,Refrigerated,Mumbai,2.9,100,2025-07-11,1
+batch_2025-07-13,Spinach,Vegetable,2025-07-08,Refrigerated,Chennai,-1.5,88.0,2025-07-12,1
+batch_2025-07-13,Spinach,Vegetable,2025-07-10,Refrigerated,Delhi,5.8,70.6,2025-07-14,1
+batch_2025-07-13,Spinach,Vegetable,2025-07-11,Refrigerated,Delhi,4.1,81.3,2025-07-15,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-10,Refrigerated,Mumbai,2.3,86.7,2025-07-16,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-09,Refrigerated,Delhi,7.1,92.7,2025-07-15,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-12,Refrigerated,Mumbai,4.2,71.8,2025-07-16,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-10,Refrigerated,Kolkata,2.9,98.2,2025-07-16,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-12,Refrigerated,Bangalore,4.8,95.4,2025-07-17,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-10,Refrigerated,Bangalore,4.6,100,2025-07-15,1
+batch_2025-07-13,Spinach,Vegetable,2025-07-09,Refrigerated,Chennai,0.0,75.9,2025-07-14,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-11,Refrigerated,Mumbai,1.7,94.9,2025-07-17,0
+batch_2025-07-13,Spinach,Vegetable,2025-07-09,Refrigerated,Delhi,4.7,83.3,2025-07-15,1
+batch_2025-07-13,Chicken,Meat,2025-07-11,Refrigerated,Bangalore,0.8,74.4,2025-07-19,1
+batch_2025-07-13,Chicken,Meat,2025-07-09,Refrigerated,Delhi,-0.3,83.5,2025-07-19,1
+batch_2025-07-13,Chicken,Meat,2025-07-09,Refrigerated,Delhi,4.7,100,2025-07-19,0
+batch_2025-07-13,Chicken,Meat,2025-07-11,Refrigerated,Delhi,-3.4,82.6,2025-07-20,0
+batch_2025-07-13,Chicken,Meat,2025-07-13,Refrigerated,Chennai,0.6,99.5,2025-07-23,0
+batch_2025-07-13,Chicken,Meat,2025-07-12,Refrigerated,Kolkata,3.9,97.9,2025-07-18,0
+batch_2025-07-13,Chicken,Meat,2025-07-13,Refrigerated,Chennai,-0.1,100,2025-07-23,0
+batch_2025-07-13,Chicken,Meat,2025-07-07,Refrigerated,Chennai,1.8,89.1,2025-07-13,0
+batch_2025-07-13,Chicken,Meat,2025-07-12,Refrigerated,Kolkata,3.2,75.5,2025-07-21,0
+batch_2025-07-13,Chicken,Meat,2025-07-10,Refrigerated,Chennai,2.1,79.4,2025-07-18,0
+batch_2025-07-13,Chicken,Meat,2025-07-12,Refrigerated,Chennai,4.8,86.4,2025-07-19,0
+batch_2025-07-13,Chicken,Meat,2025-07-11,Refrigerated,Delhi,2.1,91.7,2025-07-16,0
+batch_2025-07-13,Chicken,Meat,2025-07-07,Refrigerated,Mumbai,5.2,87.8,2025-07-15,1
+batch_2025-07-13,Chicken,Meat,2025-07-11,Refrigerated,Delhi,11.6,85.7,2025-07-17,1
+batch_2025-07-13,Chicken,Meat,2025-07-07,Refrigerated,Bangalore,1.6,79.2,2025-07-15,1
+batch_2025-07-13,Chicken,Meat,2025-07-12,Refrigerated,Bangalore,-0.4,86.9,2025-07-18,0
+batch_2025-07-13,Chicken,Meat,2025-07-12,Refrigerated,Delhi,-1.4,100,2025-07-20,0
+batch_2025-07-13,Chicken,Meat,2025-07-09,Refrigerated,Chennai,1.5,99.4,2025-07-15,0
+batch_2025-07-13,Chicken,Meat,2025-07-09,Refrigerated,Delhi,6.8,59.4,2025-07-16,1
+batch_2025-07-13,Chicken,Meat,2025-07-13,Refrigerated,Kolkata,-0.4,81.4,2025-07-23,0
+batch_2025-07-13,Chicken,Meat,2025-07-07,Refrigerated,Delhi,1.5,100,2025-07-16,1
+batch_2025-07-13,Chicken,Meat,2025-07-08,Refrigerated,Kolkata,-1.7,100,2025-07-16,0
+batch_2025-07-13,Chicken,Meat,2025-07-07,Refrigerated,Delhi,4.4,94.4,2025-07-13,0
+batch_2025-07-13,Chicken,Meat,2025-07-07,Refrigerated,Delhi,3.7,75.4,2025-07-17,1
+batch_2025-07-13,Chicken,Meat,2025-07-10,Refrigerated,Bangalore,1.5,93.9,2025-07-18,0
+batch_2025-07-13,Chicken,Meat,2025-07-11,Refrigerated,Chennai,1.8,66.7,2025-07-16,0
+batch_2025-07-13,Chicken,Meat,2025-07-11,Refrigerated,Delhi,0.9,83.5,2025-07-21,0
+batch_2025-07-13,Chicken,Meat,2025-07-09,Refrigerated,Bangalore,1.7,90.7,2025-07-17,0
+batch_2025-07-13,Chicken,Meat,2025-07-13,Refrigerated,Mumbai,3.6,88.1,2025-07-19,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-10,Frozen,Bangalore,-16.8,36.5,2026-05-31,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-09,Frozen,Mumbai,-22.0,42.0,2026-04-08,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-09,Frozen,Kolkata,-19.1,0.5,2026-02-04,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-12,Frozen,Kolkata,-17.2,56.1,2026-02-08,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-08,Frozen,Bangalore,-15.8,42.1,2026-04-02,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-07,Frozen,Mumbai,-18.7,43.4,2026-04-05,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-09,Frozen,Chennai,-25.6,62.4,2026-04-09,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-09,Frozen,Kolkata,-13.7,78.3,2026-04-20,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-11,Frozen,Chennai,-12.7,34.2,2026-02-08,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-07,Frozen,Delhi,-20.7,62.7,2026-02-03,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-11,Frozen,Chennai,-20.0,34.5,2026-01-27,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-08,Frozen,Chennai,-18.7,52.4,2026-02-16,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-13,Frozen,Chennai,-13.9,37.8,2026-01-16,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-08,Frozen,Chennai,-20.9,42.0,2026-01-11,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-11,Frozen,Kolkata,-16.7,27.8,2026-05-03,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-07,Frozen,Bangalore,-24.8,40.3,2026-07-05,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-11,Frozen,Delhi,-20.9,41.9,2026-03-09,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-10,Frozen,Chennai,-11.8,38.5,2026-03-10,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-10,Frozen,Mumbai,-23.3,36.8,2026-05-17,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-12,Frozen,Mumbai,-18.4,24.7,2026-06-06,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-13,Frozen,Chennai,-23.9,31.3,2026-02-05,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-09,Frozen,Chennai,-20.0,34.0,2026-02-23,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-08,Frozen,Chennai,-15.1,28.9,2026-06-09,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-12,Frozen,Mumbai,-20.2,44.6,2026-06-11,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-12,Frozen,Kolkata,-15.6,48.1,2026-06-12,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-09,Frozen,Bangalore,-19.3,33.9,2026-04-01,0
+batch_2025-07-13,Ice Cream,FrozenDessert,2025-07-08,Frozen,Bangalore,-15.1,35.8,2026-02-01,0
+batch_2025-07-06,Apple,Fruit,2025-07-04,Refrigerated,Kolkata,2.6,64.6,2025-08-03,0
+batch_2025-07-06,Apple,Fruit,2025-06-30,Refrigerated,Chennai,4.7,100,2025-07-26,1
+batch_2025-07-06,Apple,Fruit,2025-07-03,Refrigerated,Bangalore,1.1,80.5,2025-07-25,0
+batch_2025-07-06,Apple,Fruit,2025-07-01,Refrigerated,Delhi,-3.1,98.8,2025-07-23,0
+batch_2025-07-06,Apple,Fruit,2025-07-02,Refrigerated,Kolkata,-2.5,89.0,2025-07-27,0
+batch_2025-07-06,Apple,Fruit,2025-07-05,Refrigerated,Kolkata,1.6,100,2025-07-28,0
+batch_2025-07-06,Apple,Fruit,2025-07-04,Refrigerated,Kolkata,-2.8,83.4,2025-07-31,0
+batch_2025-07-06,Apple,Fruit,2025-07-03,Refrigerated,Kolkata,7.2,91.7,2025-07-28,0
+batch_2025-07-06,Apple,Fruit,2025-07-01,Refrigerated,Kolkata,1.8,85.7,2025-07-25,0
+batch_2025-07-06,Apple,Fruit,2025-07-02,Refrigerated,Delhi,2.2,89.7,2025-07-31,0
+batch_2025-07-06,Apple,Fruit,2025-07-01,Refrigerated,Bangalore,4.6,94.2,2025-07-28,0
+batch_2025-07-06,Apple,Fruit,2025-07-03,Refrigerated,Kolkata,5.7,90.1,2025-08-02,1
+batch_2025-07-06,Apple,Fruit,2025-07-05,Refrigerated,Chennai,1.3,100,2025-08-02,0
+batch_2025-07-06,Apple,Fruit,2025-06-30,Refrigerated,Delhi,2.4,69.6,2025-07-26,1
+batch_2025-07-06,Apple,Fruit,2025-07-02,Refrigerated,Bangalore,6.6,100,2025-07-31,0
+batch_2025-07-06,Apple,Fruit,2025-06-30,Refrigerated,Mumbai,0.5,94.4,2025-07-28,0
+batch_2025-07-06,Apple,Fruit,2025-07-06,Refrigerated,Mumbai,2.4,82.3,2025-07-31,0
+batch_2025-07-06,Apple,Fruit,2025-07-02,Refrigerated,Kolkata,6.5,94.8,2025-07-27,0
+batch_2025-07-06,Apple,Fruit,2025-07-03,Refrigerated,Bangalore,0.8,94.1,2025-07-26,0
+batch_2025-07-06,Apple,Fruit,2025-07-01,Refrigerated,Bangalore,2.8,93.9,2025-07-24,0
+batch_2025-07-06,Apple,Fruit,2025-07-01,Refrigerated,Bangalore,-0.4,89.6,2025-07-22,0
+batch_2025-07-06,Apple,Fruit,2025-07-01,Refrigerated,Kolkata,-1.7,96.2,2025-07-30,0
+batch_2025-07-06,Apple,Fruit,2025-07-01,Refrigerated,Mumbai,2.6,80.4,2025-07-30,0
+batch_2025-07-06,Apple,Fruit,2025-06-30,Refrigerated,Delhi,4.0,80.5,2025-07-28,0
+batch_2025-07-06,Apple,Fruit,2025-07-01,Refrigerated,Mumbai,-3.2,86.1,2025-07-30,0
+batch_2025-07-06,Banana,Fruit,2025-07-06,Ambient,Chennai,9.5,59.3,2025-07-13,1
+batch_2025-07-06,Banana,Fruit,2025-07-06,Ambient,Chennai,11.3,63.5,2025-07-09,0
+batch_2025-07-06,Banana,Fruit,2025-07-06,Ambient,Kolkata,9.4,51.4,2025-07-11,1
+batch_2025-07-06,Banana,Fruit,2025-07-03,Ambient,Kolkata,11.4,53.0,2025-07-09,1
+batch_2025-07-06,Banana,Fruit,2025-07-02,Ambient,Mumbai,9.5,68.2,2025-07-08,1
+batch_2025-07-06,Banana,Fruit,2025-07-03,Ambient,Chennai,14.3,62.8,2025-07-10,0
+batch_2025-07-06,Banana,Fruit,2025-07-06,Ambient,Delhi,4.2,69.7,2025-07-12,1
+batch_2025-07-06,Banana,Fruit,2025-07-02,Ambient,Kolkata,16.0,55.5,2025-07-05,0
+batch_2025-07-06,Banana,Fruit,2025-07-02,Ambient,Mumbai,19.9,55.2,2025-07-07,0
+batch_2025-07-06,Banana,Fruit,2025-07-04,Ambient,Mumbai,19.6,64.9,2025-07-08,0
+batch_2025-07-06,Banana,Fruit,2025-07-01,Ambient,Mumbai,14.3,68.8,2025-07-07,0
+batch_2025-07-06,Banana,Fruit,2025-07-03,Ambient,Kolkata,15.4,57.5,2025-07-07,0
+batch_2025-07-06,Banana,Fruit,2025-06-30,Ambient,Mumbai,18.2,74.9,2025-07-06,1
+batch_2025-07-06,Banana,Fruit,2025-07-04,Ambient,Mumbai,19.7,84.4,2025-07-07,1
+batch_2025-07-06,Banana,Fruit,2025-07-02,Ambient,Chennai,16.3,57.7,2025-07-05,0
+batch_2025-07-06,Banana,Fruit,2025-07-04,Ambient,Bangalore,16.9,56.0,2025-07-07,0
+batch_2025-07-06,Banana,Fruit,2025-07-01,Ambient,Chennai,14.0,68.6,2025-07-05,0
+batch_2025-07-06,Banana,Fruit,2025-07-04,Ambient,Bangalore,12.6,91.9,2025-07-09,0
+batch_2025-07-06,Banana,Fruit,2025-07-04,Ambient,Mumbai,12.3,72.0,2025-07-09,0
+batch_2025-07-06,Banana,Fruit,2025-07-01,Ambient,Chennai,15.8,78.0,2025-07-07,0
+batch_2025-07-06,Banana,Fruit,2025-07-04,Ambient,Bangalore,18.3,64.7,2025-07-10,1
+batch_2025-07-06,Banana,Fruit,2025-07-03,Ambient,Chennai,18.2,63.5,2025-07-07,0
+batch_2025-07-06,Banana,Fruit,2025-06-30,Ambient,Delhi,6.2,80.1,2025-07-03,1
+batch_2025-07-06,Banana,Fruit,2025-07-06,Ambient,Bangalore,9.8,68.1,2025-07-13,1
+batch_2025-07-06,Banana,Fruit,2025-07-06,Ambient,Kolkata,11.5,69.6,2025-07-09,0
+batch_2025-07-06,Banana,Fruit,2025-07-06,Ambient,Mumbai,12.7,60.0,2025-07-09,0
+batch_2025-07-06,Banana,Fruit,2025-07-04,Ambient,Delhi,11.4,59.6,2025-07-10,1
+batch_2025-07-06,Milk,Dairy,2025-07-06,Refrigerated,Delhi,-1.3,91.7,2025-07-19,0
+batch_2025-07-06,Milk,Dairy,2025-07-01,Refrigerated,Kolkata,-3.0,100,2025-07-13,1
+batch_2025-07-06,Milk,Dairy,2025-07-03,Refrigerated,Chennai,3.4,98.6,2025-07-15,1
+batch_2025-07-06,Milk,Dairy,2025-07-06,Refrigerated,Bangalore,0.2,80.1,2025-07-17,0
+batch_2025-07-06,Milk,Dairy,2025-07-02,Refrigerated,Mumbai,1.0,89.7,2025-07-15,0
+batch_2025-07-06,Milk,Dairy,2025-07-02,Refrigerated,Delhi,3.8,77.7,2025-07-17,0
+batch_2025-07-06,Milk,Dairy,2025-07-03,Refrigerated,Chennai,4.4,100,2025-07-15,0
+batch_2025-07-06,Milk,Dairy,2025-07-05,Refrigerated,Kolkata,-0.2,83.9,2025-07-20,1
+batch_2025-07-06,Milk,Dairy,2025-07-05,Refrigerated,Bangalore,1.7,81.9,2025-07-18,1
+batch_2025-07-06,Milk,Dairy,2025-07-03,Refrigerated,Bangalore,2.4,99.8,2025-07-15,0
+batch_2025-07-06,Milk,Dairy,2025-07-06,Refrigerated,Delhi,1.5,78.5,2025-07-16,0
+batch_2025-07-06,Milk,Dairy,2025-06-30,Refrigerated,Kolkata,1.6,99.0,2025-07-10,0
+batch_2025-07-06,Milk,Dairy,2025-07-05,Refrigerated,Mumbai,1.8,100,2025-07-17,0
+batch_2025-07-06,Milk,Dairy,2025-07-04,Refrigerated,Delhi,8.0,76.4,2025-07-16,1
+batch_2025-07-06,Milk,Dairy,2025-07-03,Refrigerated,Delhi,4.2,89.0,2025-07-15,0
+batch_2025-07-06,Milk,Dairy,2025-07-05,Refrigerated,Chennai,-0.0,100,2025-07-17,0
+batch_2025-07-06,Milk,Dairy,2025-07-01,Refrigerated,Bangalore,-0.3,83.0,2025-07-16,0
+batch_2025-07-06,Milk,Dairy,2025-07-06,Refrigerated,Bangalore,5.6,100,2025-07-20,0
+batch_2025-07-06,Milk,Dairy,2025-07-03,Refrigerated,Mumbai,2.8,83.5,2025-07-15,1
+batch_2025-07-06,Milk,Dairy,2025-07-05,Refrigerated,Bangalore,1.0,87.0,2025-07-17,0
+batch_2025-07-06,Milk,Dairy,2025-07-02,Refrigerated,Kolkata,7.5,88.2,2025-07-16,0
+batch_2025-07-06,Milk,Dairy,2025-07-02,Refrigerated,Chennai,3.4,100,2025-07-17,0
+batch_2025-07-06,Milk,Dairy,2025-07-01,Refrigerated,Chennai,-1.0,93.9,2025-07-16,1
+batch_2025-07-06,Milk,Dairy,2025-07-02,Refrigerated,Mumbai,-0.6,78.7,2025-07-17,0
+batch_2025-07-06,Milk,Dairy,2025-07-01,Refrigerated,Chennai,9.5,82.4,2025-07-15,1
+batch_2025-07-06,Milk,Dairy,2025-07-04,Refrigerated,Mumbai,0.2,82.1,2025-07-16,0
+batch_2025-07-06,Milk,Dairy,2025-07-04,Refrigerated,Kolkata,0.8,100,2025-07-14,0
+batch_2025-07-06,Milk,Dairy,2025-07-01,Refrigerated,Mumbai,-0.5,94.1,2025-07-12,0
+batch_2025-07-06,Bread,Bakery,2025-07-05,Ambient,Mumbai,17.4,46.6,2025-07-10,0
+batch_2025-07-06,Bread,Bakery,2025-07-01,Ambient,Delhi,27.6,59.2,2025-07-04,0
+batch_2025-07-06,Bread,Bakery,2025-07-04,Ambient,Mumbai,22.6,50.2,2025-07-08,1
+batch_2025-07-06,Bread,Bakery,2025-07-02,Ambient,Kolkata,16.4,61.8,2025-07-06,0
+batch_2025-07-06,Bread,Bakery,2025-07-02,Ambient,Bangalore,22.7,66.8,2025-07-07,0
+batch_2025-07-06,Bread,Bakery,2025-07-03,Ambient,Chennai,15.9,52.4,2025-07-07,0
+batch_2025-07-06,Bread,Bakery,2025-07-02,Ambient,Mumbai,19.1,62.5,2025-07-05,0
+batch_2025-07-06,Bread,Bakery,2025-07-03,Ambient,Delhi,25.1,44.0,2025-07-06,0
+batch_2025-07-06,Bread,Bakery,2025-07-03,Ambient,Kolkata,22.3,55.7,2025-07-06,0
+batch_2025-07-06,Bread,Bakery,2025-06-30,Ambient,Mumbai,14.3,51.2,2025-07-04,1
+batch_2025-07-06,Bread,Bakery,2025-06-30,Ambient,Chennai,14.5,54.1,2025-07-04,1
+batch_2025-07-06,Bread,Bakery,2025-07-04,Ambient,Mumbai,18.3,57.1,2025-07-07,0
+batch_2025-07-06,Bread,Bakery,2025-07-05,Ambient,Mumbai,17.3,49.5,2025-07-10,1
+batch_2025-07-06,Bread,Bakery,2025-06-30,Ambient,Mumbai,19.8,48.7,2025-07-03,0
+batch_2025-07-06,Bread,Bakery,2025-07-04,Ambient,Bangalore,24.5,66.6,2025-07-09,0
+batch_2025-07-06,Bread,Bakery,2025-07-06,Ambient,Kolkata,21.8,62.6,2025-07-10,0
+batch_2025-07-06,Bread,Bakery,2025-07-03,Ambient,Kolkata,17.0,50.9,2025-07-06,0
+batch_2025-07-06,Bread,Bakery,2025-07-03,Ambient,Delhi,17.8,62.7,2025-07-08,0
+batch_2025-07-06,Bread,Bakery,2025-07-01,Ambient,Delhi,13.1,60.3,2025-07-05,0
+batch_2025-07-06,Bread,Bakery,2025-07-03,Ambient,Mumbai,21.1,55.3,2025-07-07,0
+batch_2025-07-06,Bread,Bakery,2025-07-06,Ambient,Delhi,11.2,84.9,2025-07-09,1
+batch_2025-07-06,Bread,Bakery,2025-07-05,Ambient,Kolkata,26.1,61.9,2025-07-10,1
+batch_2025-07-06,Bread,Bakery,2025-07-04,Ambient,Bangalore,20.1,68.0,2025-07-07,0
+batch_2025-07-06,Bread,Bakery,2025-07-03,Ambient,Mumbai,22.9,63.1,2025-07-08,0
+batch_2025-07-06,Paneer,Dairy,2025-07-06,Refrigerated,Kolkata,1.3,97.3,2025-07-13,1
+batch_2025-07-06,Paneer,Dairy,2025-07-06,Refrigerated,Kolkata,6.3,88.9,2025-07-13,0
+batch_2025-07-06,Paneer,Dairy,2025-07-06,Refrigerated,Mumbai,2.3,86.5,2025-07-13,0
+batch_2025-07-06,Paneer,Dairy,2025-07-01,Refrigerated,Chennai,4.0,100,2025-07-11,0
+batch_2025-07-06,Paneer,Dairy,2025-07-04,Refrigerated,Kolkata,4.1,96.7,2025-07-12,1
+batch_2025-07-06,Paneer,Dairy,2025-06-30,Refrigerated,Delhi,5.7,96.9,2025-07-09,0
+batch_2025-07-06,Paneer,Dairy,2025-07-03,Refrigerated,Mumbai,6.1,72.1,2025-07-13,0
+batch_2025-07-06,Paneer,Dairy,2025-07-05,Refrigerated,Bangalore,4.3,89.0,2025-07-15,0
+batch_2025-07-06,Paneer,Dairy,2025-07-06,Refrigerated,Delhi,6.3,94.4,2025-07-13,1
+batch_2025-07-06,Paneer,Dairy,2025-06-30,Refrigerated,Chennai,1.4,69.7,2025-07-10,1
+batch_2025-07-06,Paneer,Dairy,2025-07-02,Refrigerated,Delhi,5.7,88.1,2025-07-10,0
+batch_2025-07-06,Paneer,Dairy,2025-07-04,Refrigerated,Delhi,2.0,90.3,2025-07-14,0
+batch_2025-07-06,Paneer,Dairy,2025-07-06,Refrigerated,Chennai,1.5,86.9,2025-07-15,1
+batch_2025-07-06,Paneer,Dairy,2025-07-04,Refrigerated,Kolkata,4.5,80.2,2025-07-13,0
+batch_2025-07-06,Paneer,Dairy,2025-07-04,Refrigerated,Delhi,3.4,71.5,2025-07-14,0
+batch_2025-07-06,Paneer,Dairy,2025-07-06,Refrigerated,Bangalore,3.9,100,2025-07-16,0
+batch_2025-07-06,Paneer,Dairy,2025-07-05,Refrigerated,Delhi,11.8,95.0,2025-07-12,1
+batch_2025-07-06,Paneer,Dairy,2025-07-02,Refrigerated,Delhi,4.3,88.5,2025-07-12,0
+batch_2025-07-06,Paneer,Dairy,2025-07-02,Refrigerated,Delhi,7.7,100,2025-07-09,1
+batch_2025-07-06,Paneer,Dairy,2025-06-30,Refrigerated,Bangalore,2.8,88.6,2025-07-09,1
+batch_2025-07-06,Paneer,Dairy,2025-07-05,Refrigerated,Chennai,-1.0,100,2025-07-15,0
+batch_2025-07-06,Paneer,Dairy,2025-07-05,Refrigerated,Mumbai,3.9,72.0,2025-07-12,1
+batch_2025-07-06,Paneer,Dairy,2025-07-06,Refrigerated,Bangalore,4.3,96.6,2025-07-16,0
+batch_2025-07-06,Paneer,Dairy,2025-07-05,Refrigerated,Delhi,12.4,87.8,2025-07-14,1
+batch_2025-07-06,Paneer,Dairy,2025-07-02,Refrigerated,Delhi,-2.2,80.6,2025-07-09,0
+batch_2025-07-06,Paneer,Dairy,2025-07-05,Refrigerated,Mumbai,3.6,75.6,2025-07-14,0
+batch_2025-07-06,Paneer,Dairy,2025-07-05,Refrigerated,Bangalore,4.2,81.2,2025-07-12,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-03,Refrigerated,Bangalore,-1.0,98.7,2025-07-07,1
+batch_2025-07-06,Spinach,Vegetable,2025-06-30,Refrigerated,Mumbai,2.0,82.2,2025-07-06,1
+batch_2025-07-06,Spinach,Vegetable,2025-07-04,Refrigerated,Mumbai,-0.6,100,2025-07-09,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-02,Refrigerated,Kolkata,1.6,100,2025-07-08,1
+batch_2025-07-06,Spinach,Vegetable,2025-07-05,Refrigerated,Mumbai,3.7,73.9,2025-07-09,1
+batch_2025-07-06,Spinach,Vegetable,2025-07-06,Refrigerated,Delhi,5.5,87.9,2025-07-10,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-06,Refrigerated,Delhi,12.5,80.3,2025-07-11,1
+batch_2025-07-06,Spinach,Vegetable,2025-07-05,Refrigerated,Kolkata,3.7,100,2025-07-10,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-01,Refrigerated,Mumbai,-2.0,87.3,2025-07-06,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-05,Refrigerated,Chennai,6.0,100,2025-07-11,1
+batch_2025-07-06,Spinach,Vegetable,2025-07-04,Refrigerated,Kolkata,-0.2,100,2025-07-10,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-06,Refrigerated,Bangalore,0.3,100,2025-07-11,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-02,Refrigerated,Bangalore,9.0,100,2025-07-08,1
+batch_2025-07-06,Spinach,Vegetable,2025-07-05,Refrigerated,Mumbai,-0.6,66.9,2025-07-09,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-02,Refrigerated,Chennai,1.5,100,2025-07-06,1
+batch_2025-07-06,Spinach,Vegetable,2025-07-06,Refrigerated,Kolkata,7.4,100,2025-07-10,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-04,Refrigerated,Mumbai,5.7,89.4,2025-07-10,0
+batch_2025-07-06,Spinach,Vegetable,2025-06-30,Refrigerated,Mumbai,4.8,94.7,2025-07-04,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-04,Refrigerated,Delhi,-2.3,79.4,2025-07-09,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-05,Refrigerated,Bangalore,5.3,90.5,2025-07-11,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-03,Refrigerated,Mumbai,2.6,90.7,2025-07-08,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-06,Refrigerated,Chennai,-1.1,95.5,2025-07-10,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-04,Refrigerated,Mumbai,5.2,96.5,2025-07-10,0
+batch_2025-07-06,Spinach,Vegetable,2025-07-03,Refrigerated,Bangalore,3.1,96.5,2025-07-07,1
+batch_2025-07-06,Spinach,Vegetable,2025-07-03,Refrigerated,Kolkata,1.3,75.1,2025-07-09,0
+batch_2025-07-06,Spinach,Vegetable,2025-06-30,Refrigerated,Kolkata,0.1,95.6,2025-07-06,1
+batch_2025-07-06,Chicken,Meat,2025-07-04,Refrigerated,Bangalore,3.0,93.9,2025-07-09,0
+batch_2025-07-06,Chicken,Meat,2025-07-04,Refrigerated,Delhi,10.2,78.1,2025-07-13,1
+batch_2025-07-06,Chicken,Meat,2025-07-05,Refrigerated,Kolkata,3.9,100,2025-07-10,0
+batch_2025-07-06,Chicken,Meat,2025-07-01,Refrigerated,Bangalore,1.9,91.8,2025-07-08,1
+batch_2025-07-06,Chicken,Meat,2025-07-03,Refrigerated,Delhi,0.4,81.3,2025-07-08,1
+batch_2025-07-06,Chicken,Meat,2025-07-06,Refrigerated,Bangalore,2.6,91.3,2025-07-14,1
+batch_2025-07-06,Chicken,Meat,2025-07-03,Refrigerated,Chennai,0.4,93.7,2025-07-09,1
+batch_2025-07-06,Chicken,Meat,2025-07-02,Refrigerated,Bangalore,3.9,100,2025-07-07,1
+batch_2025-07-06,Chicken,Meat,2025-07-05,Refrigerated,Chennai,4.4,61.9,2025-07-14,0
+batch_2025-07-06,Chicken,Meat,2025-07-05,Refrigerated,Chennai,1.4,89.7,2025-07-13,0
+batch_2025-07-06,Chicken,Meat,2025-07-01,Refrigerated,Chennai,6.6,72.0,2025-07-10,1
+batch_2025-07-06,Chicken,Meat,2025-07-05,Refrigerated,Mumbai,-4.9,75.3,2025-07-10,0
+batch_2025-07-06,Chicken,Meat,2025-07-04,Refrigerated,Bangalore,2.5,91.8,2025-07-14,1
+batch_2025-07-06,Chicken,Meat,2025-06-30,Refrigerated,Kolkata,2.6,76.0,2025-07-05,1
+batch_2025-07-06,Chicken,Meat,2025-07-02,Refrigerated,Chennai,4.5,100,2025-07-07,1
+batch_2025-07-06,Chicken,Meat,2025-07-04,Refrigerated,Kolkata,-0.3,83.3,2025-07-12,0
+batch_2025-07-06,Chicken,Meat,2025-07-06,Refrigerated,Kolkata,4.0,100,2025-07-14,0
+batch_2025-07-06,Chicken,Meat,2025-07-04,Refrigerated,Delhi,-1.0,87.8,2025-07-11,1
+batch_2025-07-06,Chicken,Meat,2025-07-01,Refrigerated,Bangalore,2.0,77.1,2025-07-09,0
+batch_2025-07-06,Chicken,Meat,2025-07-01,Refrigerated,Kolkata,1.9,86.0,2025-07-09,1
+batch_2025-07-06,Chicken,Meat,2025-07-03,Refrigerated,Chennai,2.3,82.2,2025-07-09,1
+batch_2025-07-06,Chicken,Meat,2025-07-05,Refrigerated,Delhi,-7.0,81.0,2025-07-10,0
+batch_2025-07-06,Chicken,Meat,2025-07-01,Refrigerated,Delhi,2.5,71.6,2025-07-06,0
+batch_2025-07-06,Chicken,Meat,2025-07-05,Refrigerated,Bangalore,1.7,97.5,2025-07-12,0
+batch_2025-07-06,Chicken,Meat,2025-06-30,Refrigerated,Mumbai,-0.2,98.2,2025-07-06,0
+batch_2025-07-06,Chicken,Meat,2025-07-03,Refrigerated,Delhi,-1.1,98.0,2025-07-09,1
+batch_2025-07-06,Chicken,Meat,2025-07-03,Refrigerated,Bangalore,2.8,98.4,2025-07-11,0
+batch_2025-07-06,Chicken,Meat,2025-07-06,Refrigerated,Chennai,-1.5,87.7,2025-07-11,0
+batch_2025-07-06,Chicken,Meat,2025-07-01,Refrigerated,Bangalore,0.6,97.1,2025-07-06,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-05,Frozen,Bangalore,-18.5,52.6,2026-02-08,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-01,Frozen,Bangalore,-15.3,43.8,2026-02-01,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-02,Frozen,Delhi,-10.1,35.4,2026-06-28,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-01,Frozen,Kolkata,-23.5,44.5,2026-03-29,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-01,Frozen,Mumbai,-15.7,48.5,2026-03-04,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-04,Frozen,Mumbai,-16.1,38.0,2026-02-26,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-03,Frozen,Delhi,-12.6,43.0,2026-01-12,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-02,Frozen,Kolkata,-25.5,78.7,2026-03-15,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-05,Frozen,Kolkata,-15.4,52.0,2026-03-22,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-06,Frozen,Delhi,-21.6,55.5,2026-04-27,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-05,Frozen,Delhi,-22.3,31.2,2026-06-07,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-06,Frozen,Bangalore,-15.3,40.5,2026-03-25,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-04,Frozen,Bangalore,-17.1,40.7,2026-02-02,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-01,Frozen,Kolkata,-18.9,56.1,2026-05-10,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-06-30,Frozen,Bangalore,-18.7,39.6,2026-02-13,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-01,Frozen,Mumbai,-18.1,36.3,2026-01-02,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-06-30,Frozen,Bangalore,-17.3,42.9,2026-05-12,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-03,Frozen,Delhi,-23.0,34.6,2026-04-22,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-03,Frozen,Bangalore,-17.1,30.7,2026-06-17,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-01,Frozen,Chennai,-17.2,47.1,2026-06-04,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-05,Frozen,Chennai,-16.6,52.8,2026-04-02,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-05,Frozen,Bangalore,-16.9,48.8,2026-01-01,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-06,Frozen,Chennai,-14.4,30.3,2026-07-06,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-06,Frozen,Delhi,-10.3,33.9,2026-02-15,1
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-06,Frozen,Delhi,-17.8,36.1,2026-02-06,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-04,Frozen,Delhi,-17.3,46.9,2026-03-28,0
+batch_2025-07-06,Ice Cream,FrozenDessert,2025-07-01,Frozen,Kolkata,-15.1,73.7,2026-02-08,0

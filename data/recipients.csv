@@ -1,0 +1,11 @@
+id,ngo_name,location,lat,lon,capacity,accepted_categories
+1,Delhi Food Bank,Delhi,28.61,77.23,100,Fruit|Vegetable|Dairy
+2,Mumbai Meals Trust,Mumbai,19.07,72.87,80,Bakery|Dairy|Meat
+3,GreenBasket Bangalore,Bangalore,12.97,77.59,60,Fruit|Vegetable
+4,Kolkata Kitchen,Kolkata,22.57,88.36,75,Fruit|Bakery|Meat
+5,Chennai Feeding Hope,Chennai,13.08,80.27,90,Vegetable|Dairy
+6,Savera Groceries,Delhi,28.62,77.21,50,Bakery|FrozenDessert
+7,FutureFridge Mumbai,Mumbai,19.06,72.89,45,FrozenDessert|Meat
+8,Annapurna Store,Bangalore,12.96,77.58,70,Fruit|Vegetable|Bakery
+9,Udaya Foundation,Kolkata,22.58,88.35,85,Dairy|FrozenDessert
+10,Karuna Kirana,Chennai,13.07,80.26,55,Fruit|Vegetable|Bakery
